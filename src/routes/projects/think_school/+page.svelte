@@ -5,6 +5,7 @@
 <svelte:head>
 	<title>Think School App — Adii</title>
 	<meta name="description" content="Think School app prototype by Aditya Motale" />
+	<link rel="icon" href="/projects/think_school.png" />
 </svelte:head>
 
 <section class="max-w-screen-lg min-w-full py-10">
