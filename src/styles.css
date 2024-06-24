@@ -1,8 +1,10 @@
 @import '@fontsource-variable/space-grotesk'; /* Supports weights 300-700 */
 @import '@fontsource-variable/dm-sans'; /* Supports weights 100-900 */
+@import '@fontsource-variable/epilogue'; /* Supports weights 100-900 */
 
 body {
 	min-height: 100vh;
 	margin: 0;
-	background-color: aliceblue;
+	background-color: #ede7de;
+	color: #02624e;
 }

@@ -4,8 +4,9 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				display: ['Space Grotesk Variable', 'sans-serif'],
-				serif: ['DM Sans Variable', 'sans-serif']
+				sans: ['Space Grotesk Variable', 'sans-serif'],
+				serif: ['DM Sans Variable', 'sans-serif'],
+				display: ['Epilogue Variable', 'sans-serif']
 			},
 			colors: {
 				primary: '#0C0C0C',
