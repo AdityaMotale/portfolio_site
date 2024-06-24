@@ -1,4 +1,8 @@
 <script lang="ts">
+	import TicTacToe from '$lib/images/tic_tac_toe.svg';
+	import ThinkSchoolApp from '$lib/images/think_school_app.png';
+	import PawLogger from '$lib/images/paw_logger.png';
+	import TurboZip from '$lib/images/turbo_zip.svg';
 </script>
 
 <svelte:head>
@@ -24,16 +28,79 @@
 	</div>
 
 	<div class="grid w-full grid-cols-5 px-[4%] gap-10">
-		<div class="flex flex-col items-end bg-[#D094E5] rounded-3xl w-full col-span-2 p-10">
-			<p class="font-display text-2xl font-normal tracking-normal">GAME AI</p>
+		<!-- Tic Tac Toe Game AI -->
+		<a
+			href="/projects/tic_tac_toe"
+			class="flex flex-col items-end bg-[#D094E5] rounded-3xl w-full col-span-3 p-10 relative overflow-hidden
+			group transition-all ease-in-out duration-300 hover:-translate-y-3"
+		>
+			<p class="font-display text-2xl font-medium tracking-normal">GAME AI</p>
 			<div class="h-4"></div>
-			<h3 class="font-display text-4xl font-semibold tracking-tighter">Tic Tac Toe</h3>
-		</div>
-		<div class="flex flex-col items-end bg-[#A3DCD4] rounded-3xl w-full col-span-3 p-10">
-			<p class="font-display text-2xl font-normal tracking-normal">APP PROTOTYPE</p>
+			<h3 class="font-display text-5xl font-semibold tracking-tighter">Tic Tac Toe</h3>
+			<div class="h-8"></div>
+			<div class="h-[400px]"></div>
+			<img
+				class="absolute -bottom-60 right-52 transition-all ease-in-out duration-300 group-hover:-bottom-[264px]"
+				src={TicTacToe}
+				alt="Tic Tac Toe Game"
+			/>
+		</a>
+
+		<!-- Think School App Prototype -->
+		<a
+			href="/projects/think_school"
+			class="flex flex-col items-end bg-[#A3DCD4] rounded-3xl w-full col-span-2 p-10 relative overflow-hidden
+			group transition-all ease-in-out duration-300 hover:-translate-y-2"
+		>
+			<p class="font-display text-2xl font-medium tracking-normal">APP PROTOTYPE</p>
 			<div class="h-4"></div>
-			<h3 class="font-display text-4xl font-semibold tracking-tighter">Think School App</h3>
-		</div>
+			<h3 class="font-display text-5xl font-semibold tracking-tighter">Think School App</h3>
+			<div class="h-8"></div>
+			<div class="h-[400px]"></div>
+			<img
+				class="absolute -bottom-56 right-20 transition-all ease-in-out duration-300 group-hover:-bottom-[264px]"
+				src={ThinkSchoolApp}
+				alt="Think School App Prototype"
+			/>
+		</a>
+
+		<!-- Paw Logging Library -->
+		<a
+			href="https://pub.dev/packages/paw"
+			class="flex flex-col items-end bg-[#BDDFF9] rounded-3xl w-full col-span-2 p-10 relative overflow-hidden
+			group transition-all ease-in-out duration-300 hover:-translate-y-2"
+		>
+			<p class="font-display text-2xl font-medium tracking-normal">DART LOGGING</p>
+			<div class="h-4"></div>
+			<h3 class="font-display text-5xl font-semibold tracking-tighter text-right">Paw Logger</h3>
+			<div class="h-8"></div>
+			<div class="h-[240px]"></div>
+			<img
+				class="absolute -bottom-12 -right-24 transition-all ease-in-out duration-300 group-hover:-bottom-[72px]"
+				src={PawLogger}
+				alt="Paw Logging Library"
+			/>
+		</a>
+
+		<!-- Turbo-Zip Library -->
+		<a
+			href="https://pub.dev/packages/turbo_zip"
+			class="flex flex-col items-end bg-[#E8B89C] rounded-3xl w-full col-span-3 p-10 relative overflow-hidden
+			group transition-all ease-in-out duration-300 hover:-translate-y-2"
+		>
+			<p class="font-display text-2xl font-medium tracking-normal">COMPRESSION LIBRARY</p>
+			<div class="h-4"></div>
+			<h3 class="font-display text-5xl font-semibold tracking-tighter text-right">
+				TurboZip Compression
+			</h3>
+			<div class="h-8"></div>
+			<div class="h-[240px]"></div>
+			<img
+				class="absolute -bottom-12 right-20 transition-all ease-in-out duration-300 group-hover:-bottom-[72px]"
+				src={TurboZip}
+				alt="TurboZip Library"
+			/>
+		</a>
 	</div>
 
 	<div class="md:h-20 h-10"></div>
