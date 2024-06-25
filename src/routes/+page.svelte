@@ -13,7 +13,8 @@
 <section class="w-full flex flex-col items-center">
 	<div class="md:h-20 h-10"></div>
 
-	<!-- Hero Section -->
+	<!------------------------------------------ Hero Section ------------------------------------------>
+
 	<div class="h-[80vh] flex flex-col items-center justify-center sm:px-[20%] px-[8%]">
 		<h1 class="font-display font-semibold md:text-8xl text-6xl tracking-tighter">
 			Hi. I’m Aditya.
@@ -27,8 +28,11 @@
 		</h3>
 	</div>
 
-	<div class="grid w-full grid-cols-5 px-[4%] gap-10">
+	<!------------------------------------------ Projects Section ------------------------------------------>
+
+	<div class="grid w-full md:grid-cols-5 grid-cols-1 px-[4%] gap-10">
 		<!-- Tic Tac Toe Game AI -->
+
 		<a
 			href="/projects/tic_tac_toe"
 			class="flex flex-col items-end bg-[#D094E5] rounded-3xl w-full col-span-3 p-10 relative overflow-hidden
@@ -40,16 +44,17 @@
 			<div class="h-8"></div>
 			<div class="h-[400px]"></div>
 			<img
-				class="absolute -bottom-60 right-52 transition-all ease-in-out duration-300 group-hover:-bottom-[264px]"
+				class="absolute md:-bottom-60 -bottom-32 md:right-52 right-28 transition-all ease-in-out duration-300 md:group-hover:-bottom-[264px] group-hover:-bottom-[152px]"
 				src={TicTacToe}
 				alt="Tic Tac Toe Game"
 			/>
 		</a>
 
 		<!-- Think School App Prototype -->
+
 		<a
 			href="/projects/think_school"
-			class="flex flex-col items-end bg-[#A3DCD4] rounded-3xl w-full col-span-2 p-10 relative overflow-hidden
+			class="flex flex-col items-end bg-[#A3DCD4] rounded-3xl w-full md:col-span-2 col-span-3 p-10 relative overflow-hidden
 			group transition-all ease-in-out duration-300 hover:-translate-y-2"
 		>
 			<p class="font-display text-2xl font-medium tracking-normal">APP PROTOTYPE</p>
@@ -65,9 +70,10 @@
 		</a>
 
 		<!-- Paw Logging Library -->
+
 		<a
 			href="https://pub.dev/packages/paw"
-			class="flex flex-col items-end bg-[#BDDFF9] rounded-3xl w-full col-span-2 p-10 relative overflow-hidden
+			class="flex flex-col items-end bg-[#BDDFF9] rounded-3xl w-full md:col-span-2 col-span-3 p-10 relative overflow-hidden
 			group transition-all ease-in-out duration-300 hover:-translate-y-2"
 		>
 			<p class="font-display text-2xl font-medium tracking-normal">DART LOGGING</p>
@@ -83,6 +89,7 @@
 		</a>
 
 		<!-- Turbo-Zip Library -->
+
 		<a
 			href="https://pub.dev/packages/turbo_zip"
 			class="flex flex-col items-end bg-[#E8B89C] rounded-3xl w-full col-span-3 p-10 relative overflow-hidden
@@ -103,5 +110,74 @@
 		</a>
 	</div>
 
-	<div class="md:h-20 h-10"></div>
+	<!------------------------------------------ Experience Section ------------------------------------------>
+
+	<div class="md:h-40 h-28"></div>
+
+	<!-- Quote -->
+
+	<h3
+		class="font-display font-semibold w-full md:text-[3rem] md:leading-[3.8rem] text-3xl pr-[4%] md:pl-[28%] pl-[4%]"
+	>
+		Programming is a constant battle between building your ideas and making sure they survive
+		reality.
+	</h3>
+
+	<div class="md:h-32 h-20"></div>
+
+	<!-- Experience -->
+
+	<div class="w-full flex flex-col px-[4%] gap-8">
+		<!-- NAW -->
+
+		<div
+			class="rounded-full bg-[#025A4E] flex items-center justify-between text-white lg:ml-[60%] lg:w-[40%] w-full py-4 px-8"
+		>
+			<div>
+				<h3 class="font-display text-xl font-semibold">NAW</h3>
+				<div class="h-2"></div>
+				<h5 class="font-display text-base">Web Developer & UX for IVI Systems</h5>
+			</div>
+			<p>Feb 24 —<br />June 24</p>
+		</div>
+
+		<!-- Kraftbase -->
+
+		<div
+			class="rounded-full bg-[#025A4E] flex items-center justify-between text-white lg:ml-[64%] lg:w-[24%] w-full py-4 px-8"
+		>
+			<div>
+				<h3 class="font-display text-xl font-semibold">Kraftbase</h3>
+				<div class="h-2"></div>
+				<h5 class="font-display text-base">Flutter Dev (Freelance)</h5>
+			</div>
+			<p>Mar 24 —<br />April 24</p>
+		</div>
+
+		<!-- NestFi -->
+
+		<div
+			class="rounded-full bg-[#025A4E] flex items-center justify-between text-white lg:ml-[28%] lg:w-[32%] w-full py-4 px-8"
+		>
+			<div>
+				<h3 class="font-display text-xl font-semibold">NestFi</h3>
+				<div class="h-2"></div>
+				<h5 class="font-display text-base">Flutter Developer</h5>
+			</div>
+			<p>May 22 —<br />Sept 22</p>
+		</div>
+
+		<!-- Folk Dev -->
+
+		<div
+			class="rounded-full bg-[#025A4E] flex items-center justify-between text-white lg:w-[28%] w-full py-4 px-8"
+		>
+			<div>
+				<h3 class="font-display text-xl font-semibold">Folk Developers</h3>
+				<div class="h-2"></div>
+				<h5 class="font-display text-base">Flutter Dev Intern</h5>
+			</div>
+			<p>Nov 21 —<br />Jan 22</p>
+		</div>
+	</div>
 </section>
