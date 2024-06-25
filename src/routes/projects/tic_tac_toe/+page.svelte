@@ -3,45 +3,48 @@
 </script>
 
 <svelte:head>
-	<title>Think School App — Adii</title>
-	<meta name="description" content="Think School app prototype by Aditya Motale" />
+	<title>Tic Tac Toe — Adii</title>
+	<meta name="description" content="Tic Tac Toe Game with Game AI by Aditya Motale" />
 	<link rel="icon" href="/projects/tic_tac_toe.png" />
 </svelte:head>
 
-<section class="max-w-screen-lg min-w-full py-10">
-	<div
-		class="w-full flex flex-wrap md:flex-nowrap items-center justify-center gap-20 px-10 md:px-20"
-	>
+<div class="flex flex-col items-center justify-center sm:px-[20%] px-[10%]">
+	<div class="sm:h-32 h-12"></div>
+
+	<h1 class="font-display font-semibold md:text-8xl text-5xl tracking-tighter text-center">
+		Tic Tac Toe Game w/ Game AI
+	</h1>
+
+	<div class="sm:h-24 h-12"></div>
+
+	<p class="font-display text-xl md:text-[1.875rem] md:leading-[2.5rem] font-medium">
+		Tic-tac-toe is a two-player game on a 3x3 grid, where players aim to align three marks. The AI
+		opponent uses the Minimax algorithm, evaluating all possible moves to make optimal decisions by
+		simulating future game states.
+	</p>
+
+	<div class="sm:h-24 h-12"></div>
+
+	<div class="flex md:flex-row flex-col-reverse gap-20 md:gap-0 items-center justify-between">
 		<div class="flex flex-col items-start justify-start md:max-w-[60%]">
-			<h2 class="font-display font-bold text-4xl">
-				<span class="text-accent">Toc-Tac-Toe</span> Game
-			</h2>
-
-			<div class="h-8"></div>
-
 			<!-- Info Callout -->
 
-			<div class="border border-accent rounded-md flex items-start justify-start p-2 gap-2">
-				<p class="font-serif text-base">💡</p>
-				<p class="font-serif text-base">
-					<span class="font-medium">Tip:</span> You can interact with the App shown on the side. If on
-					trackpad you can use two finger gesture to scroll the device.
+			<div
+				class="border border-accent text-accent rounded-md flex items-start justify-start p-3 gap-2
+				font-display text-sm font-medium"
+			>
+				<p>💡</p>
+				<p>
+					You can interact with the App shown on the side. If on trackpad you can use two finger
+					gesture to scroll the device.
 				</p>
 			</div>
 
-			<div class="h-8"></div>
-
-			<p class="font-serif text-xl">
-				Tic-tac-toe is a two-player game on a 3x3 grid, where players aim to align three marks. The
-				AI opponent uses the Minimax algorithm, evaluating all possible moves to make optimal
-				decisions by simulating future game states.
-			</p>
-
-			<div class="h-10"></div>
+			<div class="h-12"></div>
 
 			<!-- Links -->
 
-			<div class="flex items-center font-serif text-lg gap-1">
+			<div class="text-accent flex items-center font-serif text-lg gap-1">
 				<p>🔗</p>
 				<a
 					class="underline underline-offset-4 hover:text-accent decoration-accent"
@@ -53,7 +56,7 @@
 
 			<div class="h-4"></div>
 
-			<div class="flex items-center font-serif text-lg gap-1">
+			<div class="text-accent flex items-center font-serif text-lg gap-1">
 				<p>🔗</p>
 				<a
 					class="underline underline-offset-4 hover:text-accent decoration-accent"
@@ -65,7 +68,7 @@
 
 			<div class="h-4"></div>
 
-			<div class="flex items-center font-serif text-lg gap-1">
+			<div class="text-accent flex items-center font-serif text-lg gap-1">
 				<p>🔗</p>
 				<a
 					class="underline underline-offset-4 hover:text-accent decoration-accent"
@@ -75,13 +78,11 @@
 				</a>
 			</div>
 
-			<div class="h-10"></div>
+			<div class="h-12"></div>
 
 			<!-- Special Thanks -->
 
-			<h4 class="font-display font-bold text-2xl">
-				Special <span class="text-accent">Thanks</span> 💌
-			</h4>
+			<h4 class="font-display font-bold text-2xl">Special Thanks 💌</h4>
 
 			<div class="h-6"></div>
 
@@ -91,7 +92,7 @@
 				<p>🎨</p>
 				{' '}
 				<a
-					class="underline underline-offset-4 hover:text-accent decoration-accent"
+					class="text-accent underline underline-offset-4 hover:text-accent decoration-accent"
 					href="https://www.openpeeps.com/"
 				>
 					Open Peeps
@@ -105,7 +106,7 @@
 				<p>*️⃣</p>
 				{' '}
 				<a
-					class="underline underline-offset-4 hover:text-accent decoration-accent"
+					class="text-accent underline underline-offset-4 hover:text-accent decoration-accent"
 					href="https://github.com/lucide-icons/lucide"
 				>
 					Lucide Dev
@@ -113,18 +114,15 @@
 				<p>for icons</p>
 			</div>
 		</div>
-
-		<div>
-			<div class="h-[596px] w-[272px] flex items-center justify-center relative">
-				<img class="w-full h-full" src={Phone} alt="Phone Mockup" />
-				<div class="h-[596px] w-[272px] absolute top-[-120px] left-[-75px]">
-					<iframe
-						title="Tic Tac Toe Game"
-						src="https://adityamotale.github.io/tic_tac_toe_release/"
-						class="w-[420px] h-[844px] scale-[60%]"
-					></iframe>
-				</div>
+		<div class="h-[596px] w-[272px] relative">
+			<img class="w-full h-full" src={Phone} alt="Phone Mockup" />
+			<div class="h-[596px] w-[272px] absolute top-[-120px] left-[-75px]">
+				<iframe
+					title="Tic Tac Toe Game Web App"
+					src="https://adityamotale.github.io/tic_tac_toe_release/"
+					class="w-[420px] h-[844px] scale-[60%]"
+				></iframe>
 			</div>
 		</div>
 	</div>
-</section>
+</div>
