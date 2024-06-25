@@ -4,6 +4,14 @@
 </script>
 
 <main>
+	<header class="flex items-center justify-between px-[12%] py-8 sticky top-0 z-50">
+		<a href="/">
+			<img src="/logo.png" alt="Adii" width="60" />
+		</a>
+		<a href="https://github.com/AdityaMotale">
+			<img src="/icons/github.svg" alt="Github" />
+		</a>
+	</header>
 	<slot />
 	<footer
 		class="w-full flex md:flex-row flex-col md:items-start md:gap-0 gap-12 items-center justify-between px-[10%] mt-44 mb-24"

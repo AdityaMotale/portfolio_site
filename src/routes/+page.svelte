@@ -11,8 +11,6 @@
 </svelte:head>
 
 <section class="w-full flex flex-col items-center">
-	<div class="md:h-20 h-10"></div>
-
 	<!------------------------------------------ Hero Section ------------------------------------------>
 
 	<div class="h-[80vh] flex flex-col items-center justify-center sm:px-[20%] px-[8%]">
