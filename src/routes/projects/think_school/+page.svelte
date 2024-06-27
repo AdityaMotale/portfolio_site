@@ -17,7 +17,7 @@
 
 	<div class="sm:h-24 h-12"></div>
 
-	<p class="font-display text-xl md:text-[1.875rem] md:leading-[2.5rem] font-medium">
+	<p class="font-display md:text-xl text-lg md:text-[1.875rem] md:leading-[2.5rem] font-medium">
 		Creating a mobile app for Think School isn't just about expanding reach; it's about transforming
 		business education delivery. The proposed features will offer a more engaging, accessible, and
 		personalized learning experience, keeping Think School ahead in the evolving digital education

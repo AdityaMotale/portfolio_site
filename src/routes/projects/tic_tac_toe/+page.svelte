@@ -17,7 +17,7 @@
 
 	<div class="sm:h-24 h-12"></div>
 
-	<p class="font-display text-xl md:text-[1.875rem] md:leading-[2.5rem] font-medium">
+	<p class="font-display md:text-xl text-lg md:text-[1.875rem] md:leading-[2.5rem] font-medium">
 		Tic-tac-toe is a two-player game on a 3x3 grid, where players aim to align three marks. The AI
 		opponent uses the Minimax algorithm, evaluating all possible moves to make optimal decisions by
 		simulating future game states.
@@ -88,31 +88,26 @@
 
 			<!-- Links -->
 
-			<div class="flex items-center font-serif text-lg gap-1">
-				<p>🎨</p>
-				{' '}
-				<a
-					class="text-accent underline underline-offset-4 hover:text-accent decoration-accent"
+			<p class="font-serif text-lg w-full">
+				🎨 <a
+					class="w-fit text-accent underline underline-offset-4 hover:text-accent decoration-accent"
 					href="https://www.openpeeps.com/"
 				>
 					Open Peeps
-				</a>{' '}
-				<p>for amazing illustrations</p>
-			</div>
+				</a>
+				for amazing illustrations
+			</p>
 
 			<div class="h-4"></div>
 
-			<div class="flex items-center font-serif text-lg gap-1">
-				<p>*️⃣</p>
-				{' '}
-				<a
+			<p class="font-serif text-lg w-full">
+				*️⃣ <a
 					class="text-accent underline underline-offset-4 hover:text-accent decoration-accent"
 					href="https://github.com/lucide-icons/lucide"
 				>
 					Lucide Dev
-				</a>{' '}
-				<p>for icons</p>
-			</div>
+				</a> for icons
+			</p>
 		</div>
 		<div class="h-[596px] w-[272px] relative">
 			<img class="w-full h-full" src={Phone} alt="Phone Mockup" />
